@@ -7,7 +7,7 @@
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-	<title>icon-bar, menu icon</title>
+	<title>icon-bar, menu icon, accordion</title>
 
 	<style>
 		body {
@@ -80,10 +80,35 @@
 			-webkit-transform: rotate(45deg) translate(-10px, -10px) ;
   			transform: rotate(45deg) translate(-10px, -10px) ;
 		}
+		.accordion-container {
+			width: 50%;
+		}
+		.accordion {
+			color: #444;
+			background-color: #eee;
+			cursor: pointer;
+			padding: 18px;
+			border: none;
+			width: 100%;
+			text-align: left;
+			font-size: 15px;
+			transition: 0.5s;
+			outline: none;
+		}
+		.active2, .accordion:hover {
+			background-color: #ccc;
+		}
+		.panel {
+			display: none;
+			padding: 0 18px;
+			background-color: white;
+			overflow: hidden;
+		}
 	</style>
 </head>
 
 <body>
+	<h1>Icon bar:</h1>
 	<div class="icon-bar">
 		<a class="active" href="#"><i class="fa fa-home"></i></a>
 		<a href="#"><i class="fa fa-search"></i></a>
@@ -100,6 +125,7 @@
 		<a href="#"><i class="fa fa-trash"></i></a>
 	</div>
 
+	<h1>Menu icon:</h1>
 	<div>
 		<div class="menu-icon">
 			<div></div>
@@ -114,9 +140,44 @@
 		</div>
 	</div>
 
-	<script>
+	<h1>Accordion:</h1>
+	<div class="accordion-container">
+		<button class="accordion">Section 1</button>
+		<div class="panel">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
+
+		<button class="accordion">Section 2</button>
+		<div class="panel">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
+
+		<button class="accordion">Section 3</button>
+		<div class="panel">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
+	</div>
+
+	<script>// for menu icon
 		function myFunction(x) {
 			x.classList.toggle("change");
+		}
+	</script>
+
+	<script>// for accordion
+		var acc = document.getElementsByClassName("accordion");
+		var i;
+
+		for (i = 0; i < acc.length; i++) {
+			acc[i].addEventListener("click", function() {
+				this.classList.toggle("active2");
+				var panel = this.nextElementSibling;
+				if (panel.style.display === "block") {
+					panel.style.display = "none"
+				} else {
+					panel.style.display = "block"
+				}
+			});
 		}
 	</script>
 </body>
