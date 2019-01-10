@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>tabs</title>
+
+	<style>
+		.tab {
+			overflow: hidden;
+			border: 2px solid #ccc;
+			background-color: #f1f1f1;
+		}
+		.tab button {
+			background-color: inherit;
+			float: left;
+			border: none;
+			outline: none;
+			cursor: pointer;
+			transition: 0.3s;
+			font-size: 17px;
+			padding: 14px 16px;
+		}
+		.tab button:hover {
+			background-color: #ddd;
+		}
+		.tab button.active {
+			background-color: #ccc;
+		}
+		.tabcontent {
+			display: none;
+			padding: 6px 12px;
+			border: 2px solid #ccc;
+			border-top: none;
+		}
+		.topright {
+			float: right;
+			cursor: pointer;
+			font-size: 28px;
+		}
+		.topright:hover {
+			color: red;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Tabs:</h1>
+	<div>
+		<div class="tab">
+			<button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">London</button>
+			<button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+			<button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+		</div>
+
+		<div id="London" class="tabcontent">
+			<span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+			<h2>London</h2>
+			<p>London is the capital city of England.</p>
+		</div>
+
+		<div id="Paris" class="tabcontent">
+			<span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+			<h2>Paris</h2>
+			<p>Paris is the capital city of France.</p>
+		</div>
+
+		<div id="Tokyo" class="tabcontent">
+			<span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+			<h2>Tokyo</h2>
+			<p>Tokyo is the capital city of Japan.</p>
+		</div>
+
+	</div>
+
+	<script>// for tabs:
+		function openCity(evt, cityName) {
+			var i, tabcontent, tablinks;
+			tabcontent = document.getElementsByClassName("tabcontent");
+			for (i = 0; i < )
+		}
+	</script>
+</body>
+
+</html>
