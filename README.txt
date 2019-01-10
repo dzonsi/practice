@@ -1,1 +1,1 @@
-Practice how to form W3Schools.com
+Practice how to from W3Schools.com
