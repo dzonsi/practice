@@ -13,6 +13,7 @@
 		body {
 			margin: 0;
 		}
+		/* icon bar beginning*/
 		.icon-bar {
 			width: 100%;
 			background-color: #555;
@@ -50,10 +51,13 @@
 		.icon-bar-2 a:hover {
 			background-color: #000;
 		}
-		.menu-icon, .menu-icon-2 {
+		/* icon bar end */
+
+		/* menu icon beginning */
+		.menu-icon, .menu-icon-2, .my-container {
 			display: inline-block;
 		}
-		.menu-icon-2 {
+		.menu-icon-2, .menu-icon-3 {
 			cursor: pointer;
 		}
 		.menu-icon div {
@@ -80,6 +84,44 @@
 			-webkit-transform: rotate(45deg) translate(-10px, -10px) ;
   			transform: rotate(45deg) translate(-10px, -10px) ;
 		}
+		.bar4 {
+			width: 50px;
+			height: 6px;
+			background-color: black;
+			margin: 8px;
+			transition: 0.4s;
+		}
+		.bar5 {
+			width: 42px;
+			height: 6px;
+			background-color: black;
+			margin: 8px;
+			transition: 0.4s;
+			transform: translate(8px, 0);
+		}
+		.bar6 {
+			width: 34px;
+			height: 6px;
+			background-color: black;
+			margin: 8px;
+			transition: 0.4s;
+			transform: translate(16px, 0);
+		}
+		.change2 .bar4 {
+			-webkit-transform: rotate(-45deg) translate(-10px, 10px) ;
+  			transform: rotate(-45deg) translate(-10px, 10px) ;
+		}
+		.change2 .bar5 {
+			opacity: 0;
+		}
+		.change2 .bar6 {
+			-webkit-transform: rotate(45deg) translate(-10px, -10px) ;
+  			transform: rotate(45deg) translate(-10px, -10px) ;
+  			width: 50px;
+		}
+		/* menu icon end */
+
+		/* accordion beginning */
 		.accordion-container {
 			width: 50%;
 		}
@@ -104,6 +146,7 @@
 			background-color: white;
 			overflow: hidden;
 		}
+		/* accordion end */
 	</style>
 </head>
 
@@ -138,6 +181,14 @@
 			<div class="bar2"></div>
 			<div class="bar3"></div>
 		</div>
+
+		<div class="my-container">
+			<div class="menu-icon-3" onclick="myFunction2(this)">
+				<div class="bar4"></div>
+				<div class="bar5"></div>
+				<div class="bar6"></div>
+			</div>
+		</div>
 	</div>
 
 	<h1>Accordion:</h1>
@@ -161,6 +212,10 @@
 	<script>// for menu icon
 		function myFunction(x) {
 			x.classList.toggle("change");
+		}
+
+		function myFunction2(x) {
+			x.classList.toggle("change2");
 		}
 	</script>
 
