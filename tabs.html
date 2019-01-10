@@ -6,6 +6,7 @@
 	<title>tabs</title>
 
 	<style>
+		/* tabs beginning */
 		.container {
 			width: 50%;
 		}
@@ -44,6 +45,42 @@
 		.topright:hover {
 			color: red;
 		}
+		/* tabs end */
+
+		/* tab headers beginning */
+		.tablink2 {
+			background-color: #555;
+			color: white;
+			cursor: pointer;
+			float: left;
+			width: 25%;
+			border: none;
+			outline: none;
+			font-size: 17px;
+			padding: 14px 17px;
+		}
+		.tablink2:hover {
+			background-color: #777;
+		}
+		.tabcontent2 {
+			color: white;
+			padding: 50px;
+			text-align: center;
+			display: none;
+		}
+		.london {
+			background-color: red;
+		}
+		.paris {
+			background-color: mediumseagreen;
+		}
+		.tokyo {
+			background-color: dodgerblue;
+		}
+		.oslo {
+			background-color: tomato;
+		}
+		/* tab headers end */
 	</style>
 </head>
 
@@ -75,6 +112,34 @@
 		</div>
 
 	</div>
+<!-- mesaju se klase, nece da radi! -->
+	<h1>Tabs Headers:</h1>
+	<div class="container2">
+		<div id="London" class="tabcontent2 london">
+			<h1>London</h1>
+			<p>London is capital city of England.</p>
+		</div>
+
+		<div id="Paris" class="tabcontent2 paris">
+			<h1>Paris</h1>
+			<p>Paris is capital city of France.</p>
+		</div>
+
+		<div id="Tokyo" class="tabcontent2 tokyo">
+			<h1>Tokyo</h1>
+			<p>Tokyo is capital city of Japan.</p>
+		</div>
+
+		<div id="Oslo" class="tabcontent2 oslo">
+			<h1>Oslo</h1>
+			<p>Oslo is capital city of Norway.</p>
+		</div>
+
+		<button  class="tablink2" onclick="openCity2('London', this, 'red')">London</button>
+		<button class="tablink2" onclick="openCity2('Paris', this, 'mediumseagreen')">Paris</button>
+		<button class="tablink2" onclick="openCity2('Tokyo', this, 'dodgerblue')">Tokyo</button>
+		<button id="defaultOpen2" class="tablink2" onclick="openCity2('Oslo', this, 'tomato')">Oslo</button>
+	</div>
 
 	<script>// for tabs:
 		function openCity(evt, cityName) {
@@ -92,6 +157,24 @@
 		}
 
 		document.getElementById("defaultOpen").click();
+	</script>
+
+	<script>// for tabs header
+/*		function openCity(cityName, elmnt, color) {
+			var i, tabcontent2, tablinks2;
+			tabcontent2 = document.getElementsByClassName("tabcontent2");
+			for (i = 0; i < tabcontent2.length; i++) {
+				tabcontent2[i].style.display = "none";
+			}
+			tablinks2 = document.getElementsByClassName("tablink2");
+			for (i = 0; i < tablinks2.length; i++) {
+				tablinks2[i].style.backgroundColor = "";
+			}
+			document.getElementById(cityNames).style.display = "block";
+			elmnt.style.backgroundColor = color;
+		}
+
+		document.getElementById("defaultOpen2").click(); */
 	</script>
 </body>
 
