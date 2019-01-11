@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>responsive topnav with centered and right alligned links</title>
+
+	<style>
+		body {
+			margin: 0;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		.topnav {
+			margin: 0;
+			padding: 0;
+			width: 100%;
+			height: auto;
+			background-color: #333;
+			position: relative;
+			overflow: hidden;
+		}
+		.topnav a {
+			float: left;
+			color: #f2f2f2;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-size: 17px;
+		}
+		.topnav a:hover {
+			color: black;
+			background-color: #ddd;
+		}
+		.topnav a.active {
+  			background-color: #4CAF50;
+  			color: white;
+		}
+		.topnav-centered a {
+			float: none;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+		.topnav-right {
+			float: right;
+		}
+		@media screen and (max-width: 600px) {
+			.topnav a, .topnav-right {
+				float: none;
+				display: block;
+			}
+			.topnav-centered a {
+				position: relative;
+				top: 0;
+				left: 0;
+				transform: none;
+			}
+		}
+	</style>
+
+</head>
+
+<body>
+	<div class="topnav">
+		<div class="topnav-centered">
+			<a class="active" href="#">Home</a>
+		</div>
+
+		<a href="#">News</a>
+		<a href="#">Contact</a>
+
+		<div class="topnav-right">
+			<a href="#">Search</a>
+			<a href="#">About</a>
+		</div>
+	</div>
+
+	<div>
+  		<h1>Responsive Top Navigation with Centered and Right-Aligned Links</h1>
+  		<p>Resize the browser window to see the responsive effect.</p>
+	</div>
+
+</body>
+
+</html>
