@@ -89,7 +89,7 @@
 		}
 		.sidenav {
 			height: 100%;
-			width: 160px;
+			width: 150px;
 			position: absolute;
 			left: 0;
 			top: 0;
@@ -115,6 +115,35 @@
 			height: 100%;
 			padding: 0 10px;
 		}
+		/* second side bar */
+		.sidenav2 {
+			width: 140px;
+			position: absolute;
+			top: 15px;
+			left: 15px;
+			z-index: 1;
+			background-color: #eee;
+			overflow-x: hidden;
+			padding: 8px 0;
+		}
+		.sidenav2 a {
+			padding: 6px 8px 6px 16px;
+			text-decoration: none;
+			font-size: 25px;
+			color: #2196F3;
+			display: block;
+		}
+		.sidenav2 a:hover {
+			color: #064579;
+		}
+		.main2 {
+			margin-left: 160px;
+			font-size: 24px;
+			padding: 0 10px;
+			height: 100%;
+			overflow-y: scroll;
+		}
+		/* side bars end */
 	</style>
 </head>
 
@@ -131,7 +160,7 @@
 			</form>
 		</div>
 	</div>
-	<h1>Fixed Sidebars:</h1>
+	<h1>Fixed Sidebars:</h1><!--ne moze da se skrola kroz ceo element zbog pozicija-->
 	<div class="nice">
 		<div class="sidenav">
 			<a href="#">About</a>
@@ -152,7 +181,22 @@
 	</div>
 
 	<div class="nice clear">
-		
+		<div class="sidenav2">
+			<a href="#">About</a>
+			<a href="#">Services</a>
+			<a href="#">Clients</a>
+			<a href="#">Contact</a>
+		</div>
+
+		<div class="main2">
+			<h2>Sidebar</h2>
+			<p>This sidebar is as tall as its content (the links), and is always shown.</p>
+  			<p>Scroll down the page to see the result.</p>
+			<p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+			<p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+			<p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+			<p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+		</div>
 	</div>
 </body>
 
