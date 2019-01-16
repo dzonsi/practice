@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>full screen overlay navigation</title>
+
+	<style>
+		body {
+			margin: 0;
+			font-family: "Lato", sans-serif;
+		}
+		.btn {
+			color: white;
+			background-color: rgb(120, 120, 120);
+			border: none;
+			padding: 10px;
+			font-size: 25px;
+			border-radius: 5px;
+			cursor: pointer;
+			margin: 5px;
+		}
+		.btn:hover {
+			box-shadow: 4px 4px 8px rgb(170, 170, 170);
+		}
+		.overlay {
+			height: 100%;
+			width: 0;
+			background-color: rgb(0, 0, 0);
+			background-color: rgba(0, 0, 0, 0.9);
+			overflow: hidden;
+			position: fixed;
+			top: 0;
+			left: 0;
+			z-index: 1;
+			transition: 0.5s;
+		}
+		.overlay a {
+			color: rgb(150, 150, 150);
+			text-decoration: none;
+			font-size: 40px;
+			padding: 10px;
+			display: block;
+			transition: 0.3s;
+		}
+		.overlay a:hover, .overlay a:active {
+			color: rgb(220, 220, 220);
+		}
+		.overlay .clsbtn {
+			font-size: 60px;
+			position: absolute;
+			top: 10px;
+			right: 30px;
+		}
+		.overlay-content {
+			position: relative;
+			top: 30%;
+			text-align: center;
+		}
+
+		.overlay2 {
+			height: 0;
+			width: 100%;
+			background-color: rgb(0, 0, 0);
+			background-color: rgba(0, 0, 0, 0.9);
+			overflow: hidden;
+			position: fixed;
+			top: 0;
+			left: 0;
+			z-index: 1;
+			transition: 0.5s;
+		}
+		.overlay2 a {
+			color: rgb(150, 150, 150);
+			text-decoration: none;
+			font-size: 40px;
+			padding: 10px;
+			display: block;
+			transition: 0.3s;
+		}
+		.overlay2 a:hover, .overlay2 a:active {
+			color: rgb(220, 220, 220);
+		}
+		.overlay2 .clsbtn {
+			font-size: 60px;
+			position: absolute;
+			top: 10px;
+			right: 30px;
+		}
+
+		.overlay3 {
+			height: 100%;
+			width: 100%;
+			background-color: rgb(0, 0, 0);
+			background-color: rgba(0, 0, 0, 0.9);
+			overflow: hidden;
+			position: fixed;
+			top: 0;
+			left: 0;
+			z-index: 1;
+			transition: 0.5s;
+			display: none;
+		}
+		.overlay3 a {
+			color: rgb(150, 150, 150);
+			text-decoration: none;
+			font-size: 40px;
+			padding: 10px;
+			display: block;
+			transition: 0.3s;
+		}
+		.overlay3 a:hover, .overlay3 a:active {
+			color: rgb(220, 220, 220);
+		}
+		.overlay3 .clsbtn {
+			font-size: 60px;
+			position: absolute;
+			top: 10px;
+			right: 30px;
+		}
+		
+	</style>
+
+</head>
+
+<body>
+	<div>
+		<button class="btn" onclick="openNav()">Slide Right</button>
+		<button class="btn" onclick="openNav2()">Slide Down</button>
+		<button class="btn" onclick="openNav3()">Show (No animation)</button>
+	</div>
+
+	<div id="nav" class="overlay">
+		<a href="javascript:void(0)" class="clsbtn" onclick="closeNav()">&times;</a>
+		<div class="overlay-content">
+			<a href="#">Home</a>
+			<a href="#">Clients</a>
+			<a href="#">Contact</a>
+			<a href="#">About</a>
+		</div>
+	</div>
+
+	<div id="nav2" class="overlay2">
+		<a href="javascript:void(0)" class="clsbtn" onclick="closeNav2()">&times;</a>
+		<div class="overlay-content">
+			<a href="#">Home</a>
+			<a href="#">Clients</a>
+			<a href="#">Contact</a>
+			<a href="#">About</a>
+		</div>
+	</div>
+
+	<div id="nav3" class="overlay3">
+		<a href="javascript:void(0)" class="clsbtn" onclick="closeNav3()">&times;</a>
+		<div class="overlay-content">
+			<a href="#">Home</a>
+			<a href="#">Clients</a>
+			<a href="#">Contact</a>
+			<a href="#">About</a>
+		</div>
+	</div>
+
+	<script>
+		function openNav() {
+			var x = document.getElementById("nav");
+			x.style.width = "100%";
+		}
+		function closeNav() {
+			var x = document.getElementById("nav");
+			x.style.width = "0";
+		}
+		function openNav2() {
+			var x = document.getElementById("nav2");
+			x.style.height = "100%";
+		}
+		function closeNav2() {
+			var x = document.getElementById("nav2");
+			x.style.height = "0";
+		}
+		function openNav3() {
+			var x = document.getElementById("nav3");
+			x.style.display = "block";
+		}
+		function closeNav3() {
+			var x = document.getElementById("nav3");
+			x.style.display = "none";
+		}
+	</script>
+
+</body>
+
+</html>
