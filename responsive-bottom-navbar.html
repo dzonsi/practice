@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>responsive bottom navbar</title>
+
+	<style>
+		body {
+			margin: 0;
+		}
+		* {
+			box-sizing: border-box;
+		}
+		.navbar {
+			position: fixed;
+			bottom: 0;
+			width: 100%;
+			background-color: rgb(100, 100, 100);
+			overflow: hidden;
+		}
+		.navbar-link {
+			text-decoration: none;
+			font-size: 35px;
+			padding: 12px 12px;
+			display: block;
+			float: left;
+			color: white;
+			text-align: center;
+			transition: 0.4s;
+		}
+		.navbar-link:not(:first-child):hover {
+			color: black;
+			background-color: lightgray;
+		}
+		.active {
+			background-color: mediumseagreen;
+			color: white;
+		}
+		.icon {
+			font-size: 35px;
+			padding-top: 6px;
+			display: none;
+		}
+		@media screen and (max-width: 700px) {
+			.navbar-link:not(:first-child) {
+				display: none;
+			}
+			.navbar .icon {
+				display: block;
+				float: right;
+			}
+		}
+		@media screen and (max-width: 700px) {
+			.navbar.responsive .navbar-link {
+				display: block;
+				float: none;
+				text-align: left;
+			}
+			.navbar.responsive .icon {
+				position: absolute;
+				bottom: 0;
+				right: 0;
+			}
+		}
+	</style>
+
+</head>
+
+<body>
+	<div class="navbar" id="myNavbar">
+		<a href="#" class="navbar-link active">Home</a>
+		<a class="navbar-link" href="#">News</a>
+		<a class="navbar-link" href="#">Galery</a>
+		<a class="navbar-link" href="#">Contact</a>
+		<a class="navbar-link" href="#">About</a>
+		<a href="javascript:void(0);" class="icon navbar-link" onclick="myFunction()">&#9776</a>
+	</div>
+
+	<script>
+		function myFunction() {
+  			var x = document.getElementById("myNavbar");
+  			if (x.className === "navbar") {
+    			x.className += " responsive";
+  			} else {
+    			x.className = "navbar";
+  			}
+		}
+	</script>
+</body>
+
+</html>
