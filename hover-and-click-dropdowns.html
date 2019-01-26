@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Hover and click dropdowns</title>
+	<link rel="stylesheet" type="text/css" href="practice-style/hover-dropdowns/hover-dropdowns-style.css">
+
+</head>
+
+<body>
+
+	<h1>Hover dropdowns:</h1>
+
+		<div class="dropdown left">
+			<button class="dropbtn">Left</button>
+			<div class="dropdown-content pos-left">
+				<a href="#">Link 1</a>
+				<a href="#">Link 2</a>
+				<a href="#">Link 3</a>
+				<a href="#">Link 4</a>
+			</div>
+		</div>
+
+		<div class="dropdown right">
+			<button class="dropbtn">Right</button>
+			<div class="dropdown-content pos-right">
+				<a href="#">Link 1</a>
+				<a href="#">Link 2</a>
+				<a href="#">Link 3</a>
+				<a href="#">Link 4</a>
+			</div>
+		</div>
+
+	<h1 class="clear">Click dropdowns:</h1>
+
+	<div class="dropdown2">
+		<button class="dropbtn2" onclick="myFunction()">Dropdown</button>
+		<div id="myDropdown" class="dropdown-content2">
+			<input type="text" id="myInput" class="input" placeholder="Search..." onkeyup="filterFunction()">
+			<a href="#about">About</a>
+			<a href="#base">Base</a>
+    		<a href="#blog">Blog</a>
+    		<a href="#contact">Contact</a>
+    		<a href="#custom">Custom</a>
+    		<a href="#support">Support</a>
+    		<a href="#tools">Tools</a>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="practice-script/hover-and-click-dropdowns/hover-and-click-dropdowns-script.js"></script>
+
+</body>
+
+</html>
