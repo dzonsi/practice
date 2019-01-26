@@ -1,0 +1,64 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: "Comic Sans MS";
+	margin: 0;
+}
+.sidebar {
+	width: 180px;
+	height: 100%;
+	background-color: black;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	a {
+		display: block;
+		color: rgb(130, 130, 130);
+		font-size: 20px;
+		text-decoration: none;
+		padding: 2px 0 2px 12px;
+		text-align: left;
+	}
+	& > a:first-child {
+		padding-top: 16px;
+	}
+	a:hover {
+		color: rgb(230, 230, 230);
+	}
+}
+.dropdown-btn {
+	border: none;
+	width: 100%;
+	background: none;
+	color: rgb(130, 130, 130);
+	font-size: 20px;
+	text-align: left;
+	display: block;
+	padding: 2px 0 2px 12px;
+	position: relative;
+	&:hover {
+		color: rgb(230, 230, 230);
+	}
+}
+.fa-caret-down {
+	position: absolute;
+	right: 12px;
+}
+.dropdown {
+	background-color: rgb(40, 40, 40);
+	display: none;
+	a {
+		padding-left: 22px;
+	}
+}
+.main {
+	margin-left: 180px;
+	padding: 0 15px;
+	font-size: 20px;
+}
+.active {
+	background-color: green;
+	color: white;
+}
