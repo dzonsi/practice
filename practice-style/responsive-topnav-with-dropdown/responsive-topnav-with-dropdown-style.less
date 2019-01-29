@@ -1,0 +1,140 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	font-family: "Comic Sans MS";
+	background-color: @bcgcol;
+}
+@bcgcol: #f1f1f1;
+@bcgcol-hov: #555;
+.navbar {
+	overflow: hidden;
+	background-color: #333;
+	a {
+		display: block;
+		float: left;
+		font-size: 20px;
+		text-decoration: none;
+		color: @bcgcol;
+		text-align: center;
+		padding: 14px 16px;
+		&:hover {
+			background-color: @bcgcol-hov;
+		}
+		@media screen and (max-width: 700px) {
+			&:not(:first-child) {
+				display: none;
+			}
+		}
+		&.icon {
+			display: none;
+			@media screen and (max-width: 700px) {
+				display: block;
+				float: right;
+			}
+		}
+	}
+	&.responsive {
+		@media screen and (max-width: 700px) {
+			position: relative;
+		}
+		.icon {
+			@media screen and (max-width: 700px) {
+				position: absolute;
+				top: 0;
+				right: 0;
+			}
+		}
+		a {
+			@media screen and (max-width: 700px) {
+				float: none;
+				display: block;
+				text-align: left;
+			}
+		}
+		.dropdown {
+			@media screen and (max-width: 700px) {
+				float: none;
+			}
+			.dropdown-btn {
+				@media screen and (max-width: 700px) {
+					display: block;
+					width: 100%;
+					text-align: left;
+				}
+			}
+		}
+		.dropdown-content {
+			@media screen and (max-width: 700px) {
+				display: none;
+				position: static;
+				top: 0;
+			}
+		}
+		.dropdown {
+			@media screen and (max-width: 700px) {
+				display: block;
+			}
+		}
+
+	}
+}
+.active {
+	color: @bcgcol;
+	background-color: tomato;
+}
+.dropdown-btn {
+	display: block;
+	float: left;
+	font-size: 20px;
+	color: @bcgcol;
+	text-align: center;
+	padding: 14px 16px;
+	border: none;
+	outline: none;
+	background-color: #333;
+	font-family: inherit;
+	margin: 0;
+	&:hover {
+		background-color: @bcgcol-hov;
+	}
+}
+.dropdown {
+	float: left;
+	overflow: hidden;
+	&:hover .dropdown-content {
+		display: block;
+	}
+	@media screen and (max-width: 700px) {
+		display: none;
+	}
+}
+.dropdown-content {
+	position: absolute;
+	top: 56px;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	display: none;
+	@media screen and (max-width: 700px) {
+		position: static;
+	}
+	a {
+		display: block;
+		float: none;
+		color: black;
+		text-decoration: none;
+		font-size: 20px;
+		padding: 12px 16px;
+		text-decoration: none;
+		&:hover {
+			background-color: #ccc;
+		}
+	}
+}
+.main {
+	padding: 0 10px;
+	font-size: 24px;
+}

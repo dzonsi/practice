@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #555;
+}
+.navbar a {
+  float: left;
+  display: block;
+  font-size: 20px;
+  padding: 14px 18px;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+}
+.navbar a:hover {
+  background-color: tomato;
+}
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+.subnav:hover .subnav-btn {
+  background-color: tomato;
+}
+.subnav:hover .subnav-content {
+  display: block;
+}
+.subnav .subnav-btn {
+  display: block;
+  font-size: 20px;
+  padding: 14px 18px;
+  text-align: center;
+  color: white;
+  border: 0;
+  outline: 0;
+  margin: 0;
+  background-color: inherit;
+}
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: tomato;
+  width: 100%;
+  z-index: 1;
+}
+.subnav-content a {
+  color: white;
+  text-decoration: none;
+  float: left;
+}
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+.main {
+  font-size: 25px;
+  padding: 0 14px;
+}
