@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+}
+/* pagination */
+.pagination a {
+  text-decoration: none;
+  font-size: 30px;
+  color: black;
+  padding: 12px 20px;
+  transition: background-color 0.5s;
+}
+.pagination a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+}
+/* breadcrumbs */
+ul.breadcrumbs {
+  list-style-type: none;
+  background-color: #eee;
+  padding: 15px;
+}
+ul.breadcrumbs li {
+  display: inline;
+  font-size: 25px;
+}
+ul.breadcrumbs li + li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+ul.breadcrumbs li a {
+  text-decoration: none;
+  color: dodgerblue;
+}
+ul.breadcrumbs li a:hover {
+  color: #004384;
+  text-decoration: underline;
+}
+.main {
+  font-size: 30px;
+  font-family: "Comic Sans MS";
+  margin-left: 100px;
+}
+/* sticky social bar */
+.iconbar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.iconbar a {
+  display: block;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  transition: all 0.3s;
+}
+.iconbar a.nice {
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+}
+.iconbar a.nice:hover {
+  font-size: 50px;
+}
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+.google {
+  background: #dd4b39;
+  color: white;
+}
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+.youtube {
+  background: #bb0000;
+  color: white;
+}
