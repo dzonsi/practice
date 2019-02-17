@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Lightbox (Modal Image Gallery)</title>
+	<link rel="stylesheet" type="text/css" href="../practice-style/images/lightbox/style.css">
+
+</head>
+
+<body><!-- ZAVRSIO HTML I MALI DEO CSS-->
+	<h2 class="top">Lightbox</h2>
+
+	<div class="row">
+		<div class="column">
+			<img class="hover-shadow cursor full-width" src="../../images/img_nature.jpg" alt="Nature" onclick="openModal();currentSlide(1)">
+		</div>
+		<div class="column">
+			<img class="hover-shadow cursor full-width" src="../../images/img_snow.jpg" alt="Snow" onclick="openModal();currentSlide(2)">
+		</div>
+		<div class="column">
+			<img class="hover-shadow cursor full-width" src="../../images/img_lights.jpg" alt="Lights" onclick="openModal();currentSlide(3)">
+		</div>
+		<div class="column">
+			<img class="hover-shadow cursor full-width" src="../../images/img_mountains.jpg" alt="Mountains" onclick="openModal();currentSlide(4)">
+		</div>
+	</div>
+
+	<!--Modal content-->
+	<div id="myModal" class="modal">
+		<span class="close cursor" onclick="closeModal()">&times;</span>
+
+		<div class="modal-content">
+
+			<div class="mySlides">
+				<div class="numbertext full-width">1 / 4</div>
+				<img src="../../images/img_nature_wide.jpg" alt="Nature">
+			</div>
+			<div class="mySlides">
+				<div class="numbertext full-width">2 / 4</div>
+				<img src="../../images/img_snow_wide.jpg" alt="Snow">
+			</div>
+			<div class="mySlides">
+				<div class="numbertext full-width">3 / 4</div>
+				<img src="../../images/img_lights_wide.jpg" alt="Lights">
+			</div>
+			<div class="mySlides">
+				<div class="numbertext full-width">4 / 4</div>
+				<img src="../../images/img_mountains_wide.jpg" alt="Mountains">
+			</div>
+
+			<span class="prev" onclick="plusSlides(-1)">&#10094;</span>
+			<span class="next" onclick="plusSlides(1)">&#10095;</span>
+
+			<div class="caption-container">
+				<p id="caption"></p>
+			</div>
+
+			<div class="column">
+				<img class="demo cursor full-width" src="../../images/img_nature_wide.jpg" alt="Nature and sunrise" onclick="currentSlide(1)">
+			</div>
+			<div class="column">
+				<img class="demo cursor full-width" src="../../images/img_snow_wide.jpg" alt="Snow" onclick="currentSlide(2)">
+			</div>
+			<div class="column">
+				<img class="demo cursor full-width" src="../../images/img_lights_wide.jpg" alt="Northern Lights" onclick="currentSlide(3)">
+			</div>
+			<div class="column">
+				<img class="demo cursor full-width" src="../../images/img_mountains_wide.jpg" alt="Mountains" onclick="currentSlide(4)">
+			</div>
+
+		</div>
+	</div>
+
+	<script type="text/javascript" src="../practice-script/images/lightbox/script.js"></script>
+</body>
+
+</html>

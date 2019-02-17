@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Modal Images</title>
+	<link rel="stylesheet" type="text/css" href="../practice-style/images/modal-images/style.css">
+
+</head>
+
+<body>
+	<h1>Modal Image:</h1>
+	<p>In this example, we use CSS to create a modal (dialog box) that is hidden by default.</p>
+	<p>We use JavaScript to trigger the modal and to display the current image inside the modal when it is clicked on. Also note that we use the value from the image's "alt" attribute as an image caption text inside the modal.</p>
+	<div id="container">
+		<img id="myImg" class="img-style" src="../../images/img_5terre.jpg" alt="Terre">
+		<img id="myImg2" class="img-style" src="../../images/img_snow.jpg" alt="Snow">
+		<img id="myImg3" class="img-style" src="../../images/img_lights.jpg" alt="Lights">
+		<img id="myImg4" class="img-style clear" src="../../images/img_woods.jpg" alt="Woods">
+	</div>
+
+	<!-- The Modal-->
+	<div id="myModal" class="modal">
+		<span class="close">&times;</span>
+		<img id="img01" class="modal-content">
+		<div id="caption" class="caption"></div>
+	</div>
+	<script type="text/javascript" src="../practice-script/images/modal-images/script.js"></script>
+</body>
+
+</html>
