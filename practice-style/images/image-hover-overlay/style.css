@@ -1,0 +1,256 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Comic Sans MS";
+}
+.main {
+  padding: 5px;
+  text-align: center;
+  font-size: 25px;
+}
+.main h2 {
+  margin: 10px 0;
+}
+.main p {
+  margin: 6px 0;
+}
+.container {
+  float: left;
+  margin: 5px;
+  width: calc(33.33% - 10px);
+  height: auto;
+  position: relative;
+}
+.container:hover .overlay1 {
+  opacity: 1;
+}
+.container:hover .overlay2 {
+  opacity: 1;
+}
+.container:hover .image2 {
+  opacity: 0.3;
+}
+.container:hover .overlay3 {
+  height: 100%;
+}
+.container:hover .text3 {
+  transform: translate(-50%, -50%);
+}
+.container:hover .overlay4 {
+  height: 100%;
+}
+.container:hover .text4 {
+  transform: translate(-50%, -50%);
+}
+.container:hover .overlay5 {
+  width: 100%;
+  left: 0;
+}
+.container:hover .overlay6 {
+  width: 100%;
+  right: 0;
+}
+.container:hover .overlay7 {
+  transform: scale(1);
+}
+.container:hover .overlay8 {
+  opacity: 1;
+}
+.container:hover .overlay9 {
+  opacity: 1;
+}
+.image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.image2 {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.overlay1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: dodgerblue;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+.text1 {
+  position: absolute;
+  color: white;
+  font-size: 22px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.overlay2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+.text2 {
+  position: absolute;
+  color: white;
+  background-color: mediumseagreen;
+  font-size: 20px;
+  padding: 10px 15px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  transition: 0.5s ease;
+}
+.overlay3 {
+  position: absolute;
+  width: 100%;
+  height: 0;
+  background-color: dodgerblue;
+  top: 0;
+  left: 0;
+  transition: 0.5s ease;
+}
+.text3 {
+  position: absolute;
+  color: white;
+  font-size: 22px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  text-align: center;
+}
+.overlay4 {
+  position: absolute;
+  width: 100%;
+  height: 0;
+  background-color: dodgerblue;
+  bottom: 0;
+  left: 0;
+  transition: 0.5s ease;
+}
+.text4 {
+  position: absolute;
+  color: white;
+  font-size: 22px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 100%);
+  text-align: center;
+}
+.overlay5 {
+  position: absolute;
+  width: 0;
+  height: 100%;
+  background-color: dodgerblue;
+  bottom: 0;
+  right: 0;
+  left: 100%;
+  transition: 0.5s ease;
+  overflow: hidden;
+}
+.text5 {
+  position: absolute;
+  color: white;
+  font-size: 22px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+.overlay6 {
+  position: absolute;
+  width: 0;
+  height: 100%;
+  background-color: dodgerblue;
+  bottom: 0;
+  left: 0;
+  right: 100%;
+  transition: 0.5s ease;
+  overflow: hidden;
+}
+.text6 {
+  position: absolute;
+  color: white;
+  font-size: 22px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+.overlay7 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: dodgerblue;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: 0.5s ease;
+  overflow: hidden;
+  transform: scale(0);
+}
+.text7 {
+  position: absolute;
+  color: white;
+  font-size: 22px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+.overlay8 {
+  position: absolute;
+  width: 100%;
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: 0.5s ease;
+  overflow: hidden;
+  opacity: 0;
+}
+.overlay9 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  background-color: red;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: 0.5s ease;
+  overflow: hidden;
+  opacity: 0;
+}
+.icon {
+  color: white;
+  font-size: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.icon:hover {
+  color: #ccc;
+}
