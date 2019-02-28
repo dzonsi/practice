@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+body,
+html {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+}
+.background {
+  height: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.image1 {
+  background-image: url("../../../../images/img_5terre_wide.jpg");
+}
+.image2 {
+  background-image: url("../../../../images/img_mountains_wide.jpg");
+}
+.image3 {
+  background-image: url("../../../../images/img_lights_wide.jpg");
+}
+.image4 {
+  background-image: url("../../../../images/img_woods_wide.jpg");
+}
+.image5 {
+  background-image: url("../../../../images/img_snow_wide.jpg");
+}
+.image6 {
+  background-image: url("../../../../images/img_nature_wide.jpg");
+}
+.text {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 80px;
+  font-weight: bold;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 20px 30px;
+  border: 10px solid white;
+  text-align: center;
+  z-index: 1;
+}
