@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Image zoom and magnifier glass</title>
+
+	<link rel="stylesheet" type="text/css" href="../practice-style/images/image-zoom-and-magnifier-glass/style.css">
+
+</head>
+
+<body>
+		<h2>Image zoom</h2>
+		<p>Mouse over the image:</p>
+		<div class="img-zoom-container">
+			<img id="myimage" class="img" src="../../images/cars1.jpg" alt="car">
+			<div id="myresult" class="img-zoom-result"></div>
+		</div>
+
+
+	<script type="text/javascript" src="../practice-script/images/image-zoom-and-magnifier-glass/script.js"></script>
+	<script>
+	// Initiate zoom effect:
+	imageZoom("myimage", "myresult");
+	</script>
+</body>
+
+</html>
