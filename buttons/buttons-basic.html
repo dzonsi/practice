@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Buttons basic</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../practice-style/buttons/buttons-basic/style.css">
+
+</head>
+
+<body>
+	<h2>Split button:</h2>
+	<button class="btn">Button</button>
+	<div class="dropdown">
+		<button class="btn hov">
+			<i class="fa fa-caret-down"></i>
+		</button>
+		<div class="dropdown-content">
+			<a href="#">Link 1</a>
+			<a href="#">Link 2</a>
+			<a href="#">Link 3</a>
+			<a href="#">Link 4</a>
+		</div>
+	</div>
+
+	<h2>Animate buttons:</h2>
+	<div class="main">
+		<button class="btn2">Click me</button>
+		<button class="btn3"><span class="nice">Hover </span></button>
+		<button class="btn4">Click me</button>
+	</div>
+
+	<h2>Social media buttons:</h2>
+	<a href="#" class="fa fa-facebook fas"></a>
+	<a href="#" class="fa fa-twitter fas"></a>
+	<a href="#" class="fa fa-google fas"></a>
+	<a href="#" class="fa fa-linkedin fas"></a>
+	<a href="#" class="fa fa-youtube fas"></a>
+	<a href="#" class="fa fa-instagram fas"></a>
+	<a href="#" class="fa fa-pinterest fas"></a>
+	<a href="#" class="fa fa-snapchat-ghost fas"></a>
+	<a href="#" class="fa fa-skype fas"></a>
+	<a href="#" class="fa fa-android fas"></a>
+	<a href="#" class="fa fa-dribbble fas"></a>
+	<a href="#" class="fa fa-vimeo fas"></a>
+	<a href="#" class="fa fa-tumblr fas"></a>
+	<a href="#" class="fa fa-vine fas"></a>
+	<a href="#" class="fa fa-foursquare fas"></a>
+	<a href="#" class="fa fa-stumbleupon fas"></a>
+	<a href="#" class="fa fa-flickr fas"></a>
+	<a href="#" class="fa fa-yahoo fas"></a>
+	<a href="#" class="fa fa-reddit fas"></a>
+	<a href="#" class="fa fa-rss fas"></a>
+
+	<h3>Round:</h3>
+
+	<a href="#" class="fa fa-facebook fas br"></a>
+	<a href="#" class="fa fa-twitter fas br"></a>
+	<a href="#" class="fa fa-google fas br"></a>
+	<a href="#" class="fa fa-linkedin fas br"></a>
+	<a href="#" class="fa fa-youtube fas br"></a>
+	<a href="#" class="fa fa-instagram fas br"></a>
+	<a href="#" class="fa fa-pinterest fas br"></a>
+	<a href="#" class="fa fa-snapchat-ghost fas br"></a>
+	<a href="#" class="fa fa-skype fas br"></a>
+	<a href="#" class="fa fa-android fas br"></a>
+	<a href="#" class="fa fa-dribbble fas br"></a>
+	<a href="#" class="fa fa-vimeo fas br"></a>
+	<a href="#" class="fa fa-tumblr fas br"></a>
+	<a href="#" class="fa fa-vine fas br"></a>
+	<a href="#" class="fa fa-foursquare fas br"></a>
+	<a href="#" class="fa fa-stumbleupon fas br"></a>
+	<a href="#" class="fa fa-flickr fas br"></a>
+	<a href="#" class="fa fa-yahoo fas br"></a>
+	<a href="#" class="fa fa-reddit fas br"></a>
+	<a href="#" class="fa fa-rss fas br"></a>
+
+	<h2>Read more and read less:</h2>
+
+	<div class="wrapper">
+		<h2>Example Text</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="first" class="first">...</span><span id="second" class="second">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+		<button id="btn5" class="btn5" onclick="toggle()">Read more</button>
+	</div>
+
+	<h2>Loading buttons</h2>
+
+	<button class="btn6">
+		<i class="fa fa-spinner fa-spin"></i> Loading
+	</button>
+
+	<button class="btn6">
+		<i class="fa fa-circle-o-notch fa-spin"></i> Loading
+	</button>
+
+	<button class="btn6">
+		<i class="fa fa-refresh fa-spin"></i> Loading
+	</button>
+
+	<div class="third loader"></div>
+	<div class="fourth loader"></div>
+	<div class="fifth loader"></div>
+
+	<script>
+		function toggle() {
+			var first = document.getElementById("first");
+			var second = document.getElementById("second");
+			var button = document.getElementById("btn5");
+
+			if ( button.innerHTML === "Read more") {
+				first.style.display = "none";
+				second.style.display = "inline";
+				button.innerHTML = "Read less";
+			} else {
+				first.style.display = "inline";
+				second.style.display = "none";
+				button.innerHTML = "Read more";
+			}
+		}
+	</script>
+
+</body>
+
+</html>
