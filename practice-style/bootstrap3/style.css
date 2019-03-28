@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+}
+.first {
+  background-color: #f1f1f1;
+}
+.second {
+  background-color: linen;
+}
+.third {
+  background-color: lightyellow;
+}
+.fourth {
+  background-color: lightcyan;
+}
+.img {
+  display: inline-block;
+  width: 300px;
+  height: 200px;
+}
+.full-width {
+  width: 100%;
+}

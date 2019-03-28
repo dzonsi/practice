@@ -102,6 +102,17 @@
 	<div class="fourth loader"></div>
 	<div class="fifth loader"></div>
 
+	<h2>Notification button:</h2>
+
+	<a href="javascript:void(0)" class="notification">
+		<span>Inbox</span>
+		<span class="badge">7</span>
+	</a>
+
+	<h2>Scroll to top button:</h2>
+
+	<button id="myBtn" class="btn-top" onclick="topFunction()" title="Go to top">Top</button>
+
 	<script>
 		function toggle() {
 			var first = document.getElementById("first");
@@ -117,6 +128,24 @@
 				second.style.display = "none";
 				button.innerHTML = "Read more";
 			}
+		}
+		// scroll to top button
+		window.onscroll = function() {
+			scrollFunction();
+		}
+
+		function scrollFunction() {
+			if (document.body.scrollTop > 30 ||
+			 document.documentElement.scrollTop > 30) {
+					document.getElementById("myBtn").style.display = "block";
+			} else {
+				document.getElementById("myBtn").style.display = "none";
+			}
+		}
+
+		function topFunction() {
+			document.body.scrollTop = 0 // for Safari
+			document.documentElement.scrollTop = 0;
 		}
 	</script>
 

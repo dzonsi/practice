@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Login form</title>
+	<link rel="stylesheet" href="../practice-style/forms/login-form/style.css">
+
+
+</head>
+
+<body>
+	<button class="btn" onclick="document.getElementById('form').style.display = 'block';document.body.style.backgroundColor = 'rgba(0, 0, 0, 0.4)'">Login</button>
+
+	<form id="form" class="container">
+			<div class="inner-container">
+				<img class="img" src="../../images/img_avatar.png" alt="avatar">
+			</div>
+
+			<div class="main">
+				<label for="input1"><b>Username</b></label><br>
+				<input type="text" id="input1" placeholder="Enter Username"><br>
+
+				<label for="input2"><b>Username</b></label><br>
+				<input type="password" id="input2" placeholder="Enter Password"><br>
+
+				<input type="submit" value="Login"><br>
+
+				<input id="input3" type="checkbox">
+				<label for="input3">Remember me</label>
+			</div>
+
+			<div class="footer">
+				<button class="btn2" onclick="document.getElementById('form').style.display = 'none';document.body.style.backgroundColor = 'transparent'">Cancel</button>
+				<span class="nice">Forgot <a href="#">password?</a></span>
+			</div>
+
+			<span class="close" onclick="document.getElementById('form').style.display = 'none';document.body.style.backgroundColor = 'transparent'"><b>&times;</b></span>
+	</form>
+
+	<script src="../practice-script/forms/login-form/script.js"></script>
+</body>
+
+</html>
