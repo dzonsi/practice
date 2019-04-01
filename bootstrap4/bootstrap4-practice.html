@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bootstrap 4 practice</title>
+
+	<link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+	<script src="jquery-3.3.1.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="../practice-style/bootstrap4/style.css">
+
+
+</head>
+
+<body>
+	<div class="container-fluid">
+<!--Grid system-->
+		<div class="row">
+			<div class="col first">col</div>
+			<div class="col second">col</div>
+			<div class="col third">col</div>
+		</div>
+		<div class="row">
+			<div class="col first">col</div>
+			<div class="col second">col</div>
+			<div class="col third">col</div>
+			<div class="col first">col</div>
+			<div class="col second">col</div>
+			<div class="col third">col</div>
+			<div class="col first">col</div>
+			<div class="col second">col</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-6 first">col-sm-6</div>
+			<div class="col-sm-3 second">col-sm-3</div>
+			<div class="col-sm-3 third">col-sm-3</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-2 col-sm-4 first">col-lg-2 col-sm-4</div>
+			<div class="col-lg-3 col-sm-3 second">col-lg-3 col-sm-3</div>
+			<div class="col-lg-4 col-sm-2 third">col-lg-4 col-sm-2</div>
+			<div class="col-lg-3 col-sm-3 fourth">col-lg-3 col-sm-3</div>
+		</div>
+		<div class="row">
+			<div class="col-xl-5 col-md-3 col first">col-xl-5 col-md-3 col</div>
+			<div class="col-xl-2 col-md-3 col second">col-xl-2 col-md-3 col</div>
+			<div class="col-xl-2 col-md-3 col third">col-xl-2 col-md-3 col</div>
+			<div class="col-xl-3 col-md-3 col fourth">col-xl-3 col-md-3 col</div>
+		</div>
+<!--Display headings-->
+		<h2>Display headings:</h2>
+
+			<h1 class="display-1">Display 1</h1>
+			<h1 class="display-2">Display 2</h1>
+			<h1 class="display-3">Display 3</h1>
+			<h1 class="display-4">Display 4</h1>
+<!--Colors-->
+		<h2>Colors:</h2>
+		<p class="text-black-50">Text text text text text text text!!!</p>
+		<p class="text-white-50 bg-dark">Text text text text text text text!!!</p>
+		<p class="text-primary">Text text text text text text text!!!</p>
+<!--Table-->
+		<h2>Table:</h2>
+		<table class="table table-bordered table-dark table-hover table-striped">
+			<thead>
+				<tr>
+					<th class="table-primary text-dark">Firstname</th>
+					<th class="table-danger text-dark">Lastname</th>
+        	<th class="table-warning text-dark">Email</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>John</td>
+        	<td>Doe</td>
+        	<td>john@example.com</td>
+				</tr>
+				<tr>
+        	<td>Mary</td>
+        	<td>Moe</td>
+        	<td>mary@example.com</td>
+      	</tr>
+      	<tr>
+        	<td>July</td>
+        	<td>Dooley</td>
+        	<td>july@example.com</td>
+      	</tr>
+      	<tr>
+					<td>John</td>
+        	<td>Doe</td>
+        	<td>john@example.com</td>
+				</tr>
+				<tr>
+        	<td>Mary</td>
+        	<td>Moe</td>
+        	<td>mary@example.com</td>
+      	</tr>
+      	<tr>
+        	<td>July</td>
+        	<td>Dooley</td>
+        	<td>july@example.com</td>
+      	</tr>
+			</tbody>
+		</table>
+<!--Images-->
+		<h2>Images:</h2>
+		<img class="rounded-circle float-left" src="../../images/cars1.jpg" alt="car1">
+		<img class="img-thumbnail float-right" src="../../images/cars2.jpg" alt="car2">
+		<img class="d-block mx-auto" src="../../images/cars3.jpg" alt="car3">
+		<img class="img-fluid" src="../../images/cars1.jpg" alt="car1">
+<!--Jumboton-->
+		<h2>Jumbotron:</h2>
+		<div class="jumbotron jumbotron-fluid">
+			<div class="container">
+				<h1>Bootstrap 4</h1>
+				<p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile-first projects on the web.</p>
+			</div>
+		</div>
+<!--Buttons-->
+		<h2>Buttons:</h2>
+		<button class="btn btn-primary"><i class="spinner-border spinner-border-sm"></i></button>
+		<button class="btn btn-danger"><i class="spinner-border"></i> Loading...</button>
+		<button class="btn btn-primary" disabled><i class="spinner-grow spinner-grow-sm"></i> Loading...</button>
+<!--Spinners-->
+		<h2>Spinners:</h2>
+		<div class="spinner-border"></div>
+		<div class="spinner-border text-warning"></div>
+		<div class="spinner-grow text-success"></div>
+		<div class="spinner-grow spinner-grow-sm text-primary"></div>
+<!--Pagination-->
+		<h2>Pagination</h2>
+		<ul class="pagination pagination-lg">
+  		<li class="page-item disabled"><a class="page-link" href="javascript:void(0)">Previous</a></li>
+  		<li class="page-item"><a class="page-link" href="javascript:void(0)">1</a></li>
+  		<li class="page-item active"><a class="page-link" href="javascript:void(0)">2</a></li>
+  		<li class="page-item"><a class="page-link" href="javascript:void(0)">3</a></li>
+  		<li class="page-item"><a class="page-link" href="javascript:void(0)">Next</a></li>
+		</ul>
+		<ul class="breadcrumb">
+		  <li class="breadcrumb-item"><a href="javascript:void(0)">Photos</a></li>
+		  <li class="breadcrumb-item"><a href="javascript:void(0">Summer 2017</a></li>
+		  <li class="breadcrumb-item"><a href="javascript:void(0">Italy</a></li>
+		  <li class="breadcrumb-item">Rome</li>
+		</ul>
+<!--List <Groups-->
+		<h2>List Groups:</h2>
+		<ul class="list-group list-group-horizontal">
+			<li class="list-group-item list-group-item-info">First item</li>
+  		<li class="list-group-item list-group-item-warning">Second item</li>
+  		<li class="list-group-item list-group-item-danger">Third item</li>
+  		<li class="list-group-item list-group-item-dark">Fourth item</li>
+		</ul>
+
+		<ul class="list-group">
+			<li class="list-group-item list-group-item-info d-flex justify-content-between align-items-center">First item
+				<span class="badge badge-danger badge-pill">12</span>
+			</li>
+  		<li class="list-group-item list-group-item-warning d-flex justify-content-between align-items-center">Second item
+  			<span class="badge badge-danger badge-pill">12</span>
+  		</li>
+  		<li class="list-group-item list-group-item-danger d-flex justify-content-between align-items-center">Third item
+  			<span class="badge badge-danger">12</span>
+  		</li>
+  		<li class="list-group-item list-group-item-dark d-flex justify-content-between align-items-center">Fourth item
+  			<span class="badge badge-danger">12</span>
+  		</li>
+		</ul>
+<!--Cards-->
+		<h2>Cards:</h2>
+		<div class="card bg-dark text-warning">
+			<dir class="card-basic">Basic card</dir>
+		</div>
+
+		<div class="card">
+  		<div class="card-header text-primary">Header</div>
+  		<div class="card-body text-success">Content</div>
+  		<div class="card-footer text-black-50">Footer</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-6">
+				<div class="card">
+					<img class="card-img-top" src="../../images/img_avatar.png" alt="avatar">
+					<div class="card-body">
+						<h3 class="card-title">Aaron Rodgers</h3>
+						<p class="text-success">Green Bay</p>
+						<a class="btn btn-success" href="javascript:void(0)">See Profile</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="card">
+					<div class="card-body">
+						<h3 class="card-title">Aaron Rodgers</h3>
+						<p class="text-success">Green Bay</p>
+						<a class="btn btn-success stretched-link" href="javascript:void(0)">See Profile</a>
+					</div>
+					<img class="card-img-bottom" src="../../images/img_avatar.png" alt="avatar">
+				</div>
+			</div>
+		</div>
+
+		<div class="card-columns">
+			<div class="card bg-dark text-white">
+				<div class="card-body text-center">
+					<p class="card-text">Some text inside the first card</p>
+				</div>
+			</div>
+			<div class="card bg-dark text-white">
+				<div class="card-body text-center">
+					<p class="card-text">Some text inside the first card</p>
+				</div>
+			</div>
+			<div class="card bg-dark text-white">
+				<div class="card-body text-center">
+					<p class="card-text">Some text inside the first card</p>
+				</div>
+			</div>
+			<div class="card bg-dark text-white">
+				<div class="card-body text-center">
+					<p class="card-text">Some text inside the first card</p>
+				</div>
+			</div>
+			<div class="card bg-dark text-white">
+				<div class="card-body text-center">
+					<p class="card-text">Some text inside the first card</p>
+				</div>
+			</div>
+			<div class="card bg-dark text-white">
+				<div class="card-body text-center">
+					<p class="card-text">Some text inside the first card</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="card-deck">
+			<div class="card bg-danger text-white">
+				<div class="card-body text-center">
+					<p class="card-text">Some text inside the first card. Some text inside the first card</p>
+				</div>
+			</div>
+			<div class="card bg-danger text-white">
+				<div class="card-body text-center">
+					<p class="card-text">Some text inside the first card</p>
+				</div>
+			</div>
+			<div class="card bg-danger text-white">
+				<div class="card-body text-center">
+					<p class="card-text">Some text inside the first card</p>
+				</div>
+			</div>
+			<div class="card bg-danger text-white">
+				<div class="card-body text-center">
+					<p class="card-text">Some text inside the first card</p>
+				</div>
+			</div>
+			<div class="card bg-danger text-white">
+				<div class="card-body text-center">
+					<p class="card-text">Some text inside the first card</p>
+				</div>
+			</div>
+			<div class="card bg-danger text-white">
+				<div class="card-body text-center">
+					<p class="card-text">Some text inside the first card</p>
+				</div>
+			</div>
+		</div>
+<!--Dropdowns-->
+		<h2>Dropdowns:</h2>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="dropdown dropright">
+				  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+				    Dropdown button
+				  </button>
+				  <div class="dropdown-menu">
+				    <a class="dropdown-item" href="#">Link 1</a>
+				    <a class="dropdown-item" href="#">Link 2</a>
+				    <a class="dropdown-item" href="#">Link 3</a>
+				  </div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="dropdown dropleft">
+				  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+				    Dropdown button
+				  </button>
+				  <div class="dropdown-menu">
+				    <a class="dropdown-item" href="#">Link 1</a>
+				    <a class="dropdown-item" href="#">Link 2</a>
+				    <a class="dropdown-item" href="#">Link 3</a>
+				  </div>
+				</div>
+			</div>
+		</div>
+<!--Collapse accordion-->
+		<h2>Accordion:</h2>
+		<div class="container">
+			<div id="accordion">
+				<div class="card">
+					<div class="card-header">
+						<a class="card-link text-success" href="#collapseOne" data-toggle="collapse">Collapseible Group Item #1</a>
+					</div>
+					<div id="collapseOne" class="collapse" data-parent="#accordion">
+						<div class="card-body">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-header">
+						<a class="card-link text-primary" href="#collapseThree" data-toggle="collapse">Collapseible Group Item #2</a>
+					</div>
+					<div id="collapseThree" class="collapse" data-parent="#accordion">
+						<div class="card-body">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-header">
+						<a class="card-link text-dark" href="#collapseTwo" data-toggle="collapse">Collapseible Group Item #3</a>
+					</div>
+					<div id="collapseTwo" class="collapse show" data-parent="#accordion">
+						<div class="card-body">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-header">
+						<a class="card-link text-warning" href="#collapseFour" data-toggle="collapse">Collapseible Group Item #4</a>
+					</div>
+					<div id="collapseFour" class="collapse" data-parent="#accordion">
+						<div class="card-body">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+<!--Navbar-->
+		<h2>Navbar:</h2>
+		<nav class="navbar navbar-expand-md bg-danger navbar-dark">
+			<!--brand-->
+			<a class="navbar-brand" href="javascript:void(0)">
+				<img src="../../images/cars1.jpg" style="width: 40px;">
+			</a>
+			<!--toggle button-->
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<!--navbar links-->
+			<div class="collapse navbar-collapse" id="collapsibleNavbar">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+        		<a class="nav-link" href="javascript:void(0)">Link 1</a>
+      		</li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="javascript:void(0">Link 2</a>
+		      </li>
+		      <!--dropdown-->
+		      <li class="nav-item dropdown">
+		      	<a id="navbardrop" class="nav-link dropdown-toggle" href="javascript:void(0" data-toggle="dropdown">Link 3
+		      	</a>
+		      	<div class="dropdown-menu">
+		      		<a class="dropdown-item" href="javascript:void(0">Link 3-1</a>
+		      		<a class="dropdown-item" href="javascript:void(0">Link 3-2</a>
+							<a class="dropdown-item" href="javascript:void(0">Link 3-3</a>
+		      	</div>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="javascript:void(0">Link 4</a>
+		      </li>
+				</ul>
+			</div>
+		</nav>
+<!--Forms-->
+		<h2>Forms:</h2>
+		<form class="needs-validation" novalidate>
+			<div class="form-group">
+				<label for="username">Username</label>
+				<input type="text" name="username" id="username" class="form-control" placeholder="Enter username" required>
+				<div class="valid-feedback">Valid.</div>
+				<div class="invalid-feedback">Please fill out this field.</div>
+			</div>
+			<div class="form-group">
+				<label for="password">Password</label>
+				<input type="password" name="password" id="password" class="form-control" placeholder="Enter password" required>
+				<div class="valid-feedback">Valid.</div>
+				<div class="invalid-feedback">Please fill out this field.</div>
+			</div>
+			<div class="form-group form-check">
+				<label class="form-check-label">
+					<input class="form-check-input" type="checkbox" name="remember" required>
+					I agree on bla bla bla...
+					<div class="valid-feedback">Valid.</div>
+					<div class="invalid-feedback">Please fill out this field.</div>
+				</label>
+			</div>
+			<button type="submit" class="btn btn-danger">Submit</button>
+		</form>
+<!--custom forms-->
+		<h2>Custom Forms:</h2>
+		<form>
+			<div class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input" id="customCheck" name="example">
+				<label for="customCheck" class="custom-control-label">Check this custom checkbox!</label>
+			</div>
+		</form>
+
+		<form>
+			<div class="custom-control custom-switch">
+				<input type="checkbox" class="custom-control-input" id="switch1" name="example">
+				<label for="switch1" class="custom-control-label">Check this custom switch!</label>
+			</div>
+		</form>
+
+		<form>
+			<div class="custom-control custom-radio custom-control-inline">
+				<input type="radio" name="radio1" class="custom-control-input" id="radio1">
+				<label for="radio1" class="custom-control-label">Custom radio!</label>
+			</div>
+		</form>
+<!--Toast-->
+		<h2>Toast:</h2>
+		<div id="toast1" class="toast" data-autohide="false">
+			<div class="toast-header">
+				<strong class="mr-auto text-primary">Toast header</strong>
+				<small>2 mins ago</small>
+				<button class="close ml-2 mb-1" type="button" data-dismiss="toast">&times;</button>
+			</div>
+			<div class="toast-body">
+				Some text inside toast body.
+			</div>
+		</div>
+<!--Utilities-->
+		<h2>Utilities:</h2>
+		<span class="square border"></span>
+		<span class="square border border-0"></span>
+		<span class="square border border-top-0"></span>
+		<span class="square border border-right-0"></span>
+		<span class="square border border-bottom-0"></span>
+		<span class="square border border-left-0"></span>
+		<br>
+		<br>
+		<span class="square border border-primary"></span>
+		<span class="square border border-top-0 border-secondary"></span>
+		<span class="square border border-left-0 border-danger"></span>
+		<span class="square border border-top-0 border-bottom-0 border-info"></span>
+		<span class="square border border-success"></span>
+		<span class="square border border-warning"></span>
+		<span class="square border border-info"></span>
+		<span class="square border border-light"></span>
+		<span class="square border border-dark"></span>
+		<br>
+		<br>
+		<span class="square col-dark rounded-sm"></span>
+		<span class="square col-dark rounded"></span>
+		<span class="square col-dark rounded-lg"></span>
+		<span class="square col-dark rounded-top"></span>
+		<span class="square col-dark rounded-left"></span>
+		<span class="square col-dark rounded-right"></span>
+		<span class="square col-dark rounded-bottom"></span>
+		<span class="square col-dark rounded-circle"></span>
+		<span class="square col-dark rounded-0"></span>
+
+		<div class="clearfix">
+			<span class="float-left border border-primary">Float left</span>
+			<span class="float-right border border-primary">Float right</span>
+		</div>
+
+		<div class="float-sm-right">Float right on small screens or wider</div><br>
+		<div class="float-md-right">Float right on medium screens or wider</div><br>
+		<div class="float-lg-right">Float right on large screens or wider</div><br>
+		<div class="float-xl-right">Float right on extra large screens or wider</div><br>
+		<div class="float-none">Float none</div>
+
+		<div class="mx-auto bg-warning" style="width: 300px;">Centered with margins auto.</div>
+
+		<div class="w-25 bg-warning">Width 25%</div>
+		<div class="w-50 bg-warning">Width 50%</div>
+		<div class="w-75 bg-warning">Width 75%</div>
+		<div class="w-100 bg-warning">Width 100%</div>
+		<div class="mw-100 bg-warning">Max width 100%</div>
+
+		<div style="height: 250px;">
+			<div class="dis-in-bl h-25 bg-warning">Height 25%</div>
+			<div class="dis-in-bl h-50 bg-warning">Height 50%</div>
+			<div class="dis-in-bl h-75 bg-warning">Height 75%</div>
+			<div class="dis-in-bl h-100 bg-warning">Height 100%</div>
+			<div style="height: 500px;" class="dis-in-bl mh-100 bg-warning">Max height 100%</div>
+		</div>
+
+		<div class="pb-3 mb-3 bg-danger">Some random text for practice...</div>
+		<div class="bg-danger py-2 ml-5 mb-1">Some random text for practice...</div>
+		<div class="bg-danger pl-5 mr-5 mb-1">Some random text for practice...</div>
+		<div class="bg-danger ml-n5 mb-3">Some random text for practice...</div>
+		<div class="bg-danger py-2">Some random text for practice...</div>
+		<div class="bg-danger ml-lg-5 my-2">Some random text for practice...</div>
+		<div class="bg-danger py-sm-5 py-2">Some random text for practice...</div>
+		<div class="bg-danger mx-5 p-5">Some random text for practice...</div>
+		<div class="bg-danger mt-2">Some random text for practice...</div>
+
+		<div class="shadow-none p-3 my-3 bg-light">No shadow</div>
+		<div class="shadow-sm p-3 my-3">Shadow-sm</div>
+		<div class="shadow p-3 my-3">Shadow</div>
+		<div class="shadow-lg p-3 my-3">Shadow-lg</div>
+		<br>
+		<br>
+		<span class="align-baseline">baseline</span>
+		<span class="align-top">top</span>
+		<span class="align-middle">middle</span>
+		<span class="align-bottom">bottom</span>
+		<span class="align-text-top">text-top</span>
+		<span class="align-text-bottom">text-bottom</span>
+
+		<div class="visible">I am visible</div>
+		<div class="invisible">I am invisible</div>
+		<div class="visible">I am visible</div>
+
+		<button type="button" class="close font-weight-bolder">&times;</button>
+		<button type="button" class="close">&times;</button>
+		<button type="button" class="close">&times;</button>
+		<button type="button" class="close">&times;</button>
+		<br>
+		<span class="d-block bg-success">d-block</span>
+		<span class="d-sm-block bg-success">d-sm-block</span>
+		<span class="d-md-block bg-success">d-md-block</span>
+		<span class="d-lg-block bg-success">d-lg-block</span>
+		<span class="d-xl-block bg-success">d-xl-block</span>
+<!--Flex-->
+		<h2>Flex:</h2>
+		<div class="d-flex p-3 mb-3 bg-dark text-white">
+			<div class="p-2 bg-info flex-fill">Flex item 1</div>
+			<div class="p-2 bg-danger flex-fill">Flex item 2</div>
+			<div class="p-2 bg-success flex-fill">Flex item 3</div>
+			<div class="p-2 bg-warning flex-fill">Flex item 4</div>
+		</div>
+
+		<div class="d-flex flex-row-reverse flex-xl-column p-3 mb-3 bg-dark text-white">
+			<div class="p-2 bg-info">Flex item 1</div>
+			<div class="p-2 bg-danger">Flex item 2</div>
+			<div class="p-2 bg-success">Flex item 3</div>
+			<div class="p-2 bg-warning">Flex item 4</div>
+		</div>
+
+		<div class="d-inline-flex p-3 mb-3 bg-dark text-white">
+			<div class="p-2 bg-info">Flex item 1</div>
+			<div class="p-2 bg-danger">Flex item 2</div>
+			<div class="p-2 bg-success">Flex item 3</div>
+			<div class="p-2 bg-warning">Flex item 4</div>
+		</div>
+
+		<div class="d-flex flex-column flex-xl-row justify-content-xl-center p-3 mb-3 bg-dark text-white">
+			<div class="p-2 bg-info">Flex item 1</div>
+			<div class="p-2 bg-danger">Flex item 2</div>
+			<div class="p-2 bg-success">Flex item 3</div>
+			<div class="p-2 bg-warning">Flex item 4</div>
+		</div>
+
+
+	</div><!--Zatvara container-->
+
+	<script src="../practice-script/bootstrap4/script.js"></script>
+</body>
+
+</html>

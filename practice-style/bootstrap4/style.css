@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+}
+body {
+  font-family: "Comic Sans MS";
+}
+.first {
+  background-color: cornsilk;
+}
+.second {
+  background-color: lavender;
+}
+.third {
+  background-color: palegreen;
+}
+.fourth {
+  background-color: lightpink;
+}
+.square {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+}
+.col-dark {
+  background-color: #555;
+}
+.dis-in-bl {
+  display: inline-block;
+}
