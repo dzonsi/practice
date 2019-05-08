@@ -1,0 +1,25 @@
+body {
+  font-family: Arial;
+  font-size: 17px;
+}
+.main-background {
+	background-color: #f2f2f2;
+}
+.visa-color {
+	color: navy;
+}
+.amex-color {
+	color: blue;
+}
+.mastercard-color {
+	color: red;
+}
+.discover-color {
+	color: orange;
+}
+.icon-container {
+	font-size: 24px;
+}
+.center {
+	margin-bottom: 18px;
+}

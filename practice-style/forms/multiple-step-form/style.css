@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  background-color: #f1f1f1;
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.nice {
+  overflow: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.dot-container {
+  margin-top: 20px;
+}
+
+.dot {
+  background-color: #f1f1f1;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot-active {
+  background-color: #bbbbbb;
+}
+
+.dot-ok {
+  background-color: #4CAF50;
+  opacity: 0.7;
+}
+
+.container {
+  background-color: white;
+  margin: auto;
+  padding: 30px;
+  max-width: 700px;
+  margin-top: 100px;
+}
+
+.main-input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #aaa;
+  margin-bottom: 14px;
+  font-size: 17px;
+  line-height: 20px;
+}
+
+.btn-container {
+  float: right;
+}
+
+.btn {
+  font-size: 17px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+.btn:hover {
+  opacity: 0.85;
+}
+
+.btn-next {
+  color: white;
+  background-color: #4CAF50;
+}
+
+.btn-prev {
+  color: white;
+  background-color: #bbbbbb;
+}
+
+.invalid {
+  border: 1px solid red;
+}
+
+/*# sourceMappingURL=style.css.map */

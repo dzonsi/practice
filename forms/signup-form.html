@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Signup form with Bootstrap 3</title>
+
+	<link rel="stylesheet" href="../bootstrap3/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<script src="../bootstrap3/jquery-3.3.1.js"></script>
+	<script src="../bootstrap3/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="../practice-style/forms/signup-form/style.css">
+</head>
+<body>
+	<h1>Modal Signup Form</h1>
+	<button class="btn btn-lg btn-success custom" id="first">Sign Up</button>
+
+	<div class="modal" id="modal">
+		<div class="container-fluid interior">
+			<h2><b>Sign Up</b></h2>
+			<p>Please fill in this form to create an account.</p>
+			<hr class="hr-style">
+			<form>
+				<div class="form-group">
+					<label for="email">Email</label>
+					<input class="form-control input-style" type="email" name="email" id="email" placeholder="Enter Email" required>
+				</div>
+				<div class="form-group">
+					<label for="password">Password</label>
+					<input class="form-control input-style" type="password" name="password" id="password" placeholder="Enter Password" required>
+				</div>
+				<div class="form-group">
+					<label for="repeatpassword">Repeat Password</label>
+					<input class="form-control input-style" type="password" name="repeatpassword" id="repeatpassword" placeholder="Repeat Password" required>
+				</div>
+				<div class="checkbox">
+					<label><input type="checkbox" name="rememberme">Remember me</label>
+				</div>
+				<p>
+					By creating an account you agree to our <a href="javascript:void(0)">
+						Terms & Privacy.
+					</a>
+				</p>
+				<div class="row nice">
+					<button class="btn btn-danger col-sm-6 col-xs-12 custom" id="second">Cancel</button>
+					<button type="submit" id="submit-btn" class="btn btn-success col-sm-6 col-xs-12 custom">Sign up</button>
+				</div>
+			</form>
+			<span id="third" class="third">&times;</span>
+		</div>
+	</div>
+
+	<script src="../practice-script/forms/signup-form/script.js"></script>
+</body>
+</html>

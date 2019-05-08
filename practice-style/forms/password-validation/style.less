@@ -1,0 +1,71 @@
+@first: mediumseagreen;
+@second: green;
+@third: red;
+@fourth: #f1f1f1;
+@valid: '\2713  ';
+@invalid: '\2715  ';
+
+body {
+	font-family: 'Comic Sans MS';
+	font-size: 20px;
+}
+* {
+	box-sizing: border-box;
+}
+
+.container {
+	background-color: @fourth;
+	border-radius: 5px;
+	padding: 15px;
+}
+.lower-container {
+	background-color: @fourth;
+	border-radius: 5px;
+	padding: 15px;
+	margin-top: 15px;
+	display: none;
+}
+.input {
+	width: 100%;
+	font-size: 20px;
+	padding: 8px;
+	border-radius: 4px;
+	border: 1px solid #ccc;
+	margin-top: 16px;
+}
+.input:disabled {
+	cursor: not-allowed;
+}
+.nice {
+	display: inline-block;
+	margin-top: 16px;
+}
+.submit-color {
+	color: white;
+	background-color: @first;
+	cursor: pointer;
+	&:hover {
+		background-color: darken(@first, 5%);
+	}
+}
+.invalid {
+	color: @third;
+	margin-left: 30px;
+	&:before {
+		content: @invalid;
+		position: relative;
+  	left: -20px;
+	}
+}
+.valid {
+	color: @second;
+	margin-left: 30px;
+	&:before {
+		content: @valid;
+		position: relative;
+  	left: -20px;
+	}
+}
+.right {
+	float: right;
+}
