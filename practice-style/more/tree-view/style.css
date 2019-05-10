@@ -1,0 +1,81 @@
+.list {
+	list-style-type: none;
+}
+.inside {
+	list-style-type: none;
+}
+.caret {
+	cursor: pointer;
+	user-select: none;
+}
+.caret:before {
+	content: "\25B6";
+	color: black;
+	display: inline-block;
+	margin-right: 6px;
+}
+.caret-down:before {
+	transform: rotate(90deg);
+}
+.inside {
+	display: none;
+}
+.active {
+	display: block;
+}
+.arrow {
+	padding: 3px;
+	border: black solid;
+	border-width: 0 3px 3px 0;
+	display: inline-block;
+}
+.right {
+	transform: rotateZ(-45deg);
+}
+.left {
+	transform: rotateZ(135deg);
+}
+.up {
+	transform: rotateZ(-135deg);
+}
+.down {
+	transform: rotateZ(45deg);
+}
+.shape {
+	width: 125px;
+	height: 0;
+	border-bottom: 50px solid #555;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+}
+.shape2 {
+	margin-top: 15px;
+	margin-left: 30px;
+	width: 150px;
+	height: 75px;
+	background-color: #555;
+	transform: skew(20deg);
+}
+.shape3 {
+	width: 0;
+	height: 0;
+	border-bottom: 50px solid #555;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+}
+.shape4 {
+	width: 0;
+	height: 0;
+	border-top: 50px solid #555;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-bottom: 50px solid #555;
+}
+.shape5 {
+	width: 0;
+	height: 0;
+	border-top: 50px solid #555;
+	border-left: 50px solid red;
+	border-right: 50px solid blue;
+	border-bottom: 50px solid green;
+}

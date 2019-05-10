@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tree View</title>
+
+	<link rel="stylesheet" href="../practice-style/more/tree-view/style.css">
+</head>
+<body>
+	<h2 id="demo"></h2>
+	<h2 id="timer"></h2>
+	<ul class="list">
+		<li><span class="caret">Beverages</span>
+			<ul class="inside">
+				<li>Water</li>
+				<li>Coffee</li>
+				<li><span class="caret">Tea</span>
+					<ul class="inside">
+						<li>Black Tea</li>
+						<li>White tea</li>
+						<li><span class="caret">Green Tea</span>
+							<ul class="inside">
+								<li>Sencha</li>
+								<li>Gyokuro</li>
+								<li>Matcha</li>
+								<li>Pi Lo Chun</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+	</ul>
+
+	<p>Right arrow: <i class="arrow right"></i></p>
+	<p>Left arrow: <i class="arrow left"></i></p>
+	<p>Up arrow: <i class="arrow up"></i></p>
+	<p>Down arrow: <i class="arrow down"></i></p>
+
+	<div class="shape"></div>
+	<div class="shape2"></div>
+	<div class="shape3"></div>
+	<div class="shape4"></div>
+	<div class="shape5"></div>
+
+	<script src="../practice-script/more/tree-view/script.js"></script>
+</body>
+</html>
